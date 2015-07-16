@@ -1,0 +1,74 @@
+/* @group Blink */
+/*Courtesy of:*/
+/**
+ *    Real-World CSS
+ *    by @visualidiot. Licensed under WTPFL.
+ */
+
+.blink {
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* @end */
+
+.reveal .text-command {
+    color: forestgreen;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+.reveal .controls {
+    opacity: 0.1;
+}
+.reveal .controls:hover {
+    opacity: 1;
+}
+
+.modal-bg {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-bg-lite {
+    background-color: rgba(0, 0, 0, 0.3);
+}

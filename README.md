@@ -1,0 +1,3 @@
+# Textual Healing
+
+These are the presentation slides for "Textual Healing - How to get the most out of Sublime Text".  They were thrown together very quickly-- this in no way represents a complete package-- it's essentially just a clone of the revealjs repo with my project built on top of it.  At some point I should probably come back and clean it up, but in the meantime this is a good place for it to live.

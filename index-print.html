@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Textual Healing: How to get the most out of Sublime Text</title>
+
+		<meta name="description" content="A presentation discussing some of the lesser known Sublime Text functionality that we may be missing">
+		<meta name="author" content="Alexander Nied">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<!-- Left blank intentionally for the purposes of building a little suspense :P -->
+				</section>
+
+				<section data-transition="zoom">
+					<img src="img/TextualHealing.jpg" alt="Textual Healing: How to get the most out of Sublime Text" height="600" width="600" >
+					<p>
+						<small>A presentation by Alex "Cobra" Nied</small>
+					</p>
+				</section>
+
+				<section data-background="img/SublimeTextHero.jpg">
+					<h1>Sublime Text</h1>
+					<p>A fast and sophisticated text editor (<i>not an IDE</i>) that offers out-of-the-box support for multiple languages.</p>
+				</section>
+
+				<section data-transition="fade">
+					<h2>But you already knew that...</h2>
+					<p class="fragment">...what else?</p>
+				</section>
+
+				<section >
+					<h2>Sublime Text has a <i>ton</i> of cool features you may not be using yet!</h2>
+					<div tagcloud class="fragment">
+						COMMAND PALETTE
+						Multi-line editing
+						Advanced selection methods
+						Plugins! Plugins! Plugins! 
+						Flexible layout
+						Snippets
+						Customizable
+						Advanced navigation
+					</div>
+					<p class="fragment">...and more!</p>
+				</section>
+
+				<section data-background="img/command-palette-foobar.jpg" data-background-transition="fade">
+					<h3>The COMMAND PALETTE</h3>
+					<h3 class="fragment"><span class="blink">&rarr;&rarr;&rarr;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-command">⇧⌘P</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blink">&larr;&larr;&larr;</span></h3>
+					<p class="fragment">Fuzzy-search fast-access to Sublime Text functionality.</p>
+				</section>
+
+				<section data-background="img/multiline.jpg" data-background-transition="fade" class="modal-bg-lite">
+					<h3>Multi-line Editing</h3>
+					<p>Because writing code one-line-at-a-time is for <i>chumps</i>.</p>
+					<small class="fragment">
+						<p>Next word: <span class="text-command">⌘D</span> || Skip word: <span class="text-command">⌘K</span></p>
+						<p>Break selection into lines: <span class="text-command">⇧⌘L</span></p>
+						<p>Block selection: <span class="text-command">⌥ + [click]</span></p>
+					</small>
+				</section>
+
+				<section data-transition="zoom" data-background="img/selections.jpg">
+
+					    <h3>Advanced Selection Methods</h3>
+					    <p>Select <i>all</i> the things!</p>
+						<br/><br/>
+						<small>
+							<h4>Expand selection to element level in HTML/XML:</h4>
+							<p class="text-command">⇧⌘A</p>
+						
+							<h4>Expand selection to scope level in JS:</h4>
+							<p class="text-command">⇧⌘Space</p>
+						
+							<h4>Expand selection to indentation level (Coffeescript/Python/Ruby):</h4>
+							<p class="text-command">⇧⌘J</p>
+
+							<h4>...and more!</h4>					
+						</small>
+
+				</section>
+
+
+				<section data-background="img/keyboard.jpg" class="modal-bg" data-background-transition="slide" >
+					<div class="modal-bg">
+						<h4>Quickies &amp; Niceities</h4>
+						<ul class="">
+							<li class="">Toggle comments
+								<ul>
+									<li>Single-line: <span class="text-command">⌘/</span></li>
+									<li>Block comment: <span class="text-command">⌥⌘/</span></li>
+								</ul>
+							</li>
+							<li class="">Automatic wrapping of enclosures around selection</li>
+							<li class="">Goto line: <span class="text-command">⌃G</span></li>
+							<li class="">Move line: <span class="text-command">⌃⌘ + [Up/Down Arrows]</span></li>
+							<li class="">Quick open file: <span class="text-command">⌘T</span></li>
+							<li class="">Paned layouts: <span class="text-command">View &gt; Layout</span></li>
+							<li class="">Paste &amp; Indent: <span class="text-command">⇧⌘V</span></li>
+							<li class="">Distraction-free mode: <br/><span class="text-command">View &gt; Enter Distraction Free Mode</span></li>
+						</ul>
+					</div>	
+				</section>
+
+				<section data-transition="zoom" data-background-image="img/html.jpg"class="modal-bg-lite">
+
+				    <h3>HTML Extras</h3>
+					<br/>
+					
+					<small>
+						<h4>Wrap selection with tag:</h4>
+						<p class="text-command">⌃⇧W</p>
+					
+						<h4>Encode special characters:</h4>
+						<p class="text-command">[Find in the Command Palette]</p>
+					
+						<h4>Snippets:</h4>
+						<p class="text-command">[Find in the Command Palette]</p>
+					</small>
+					
+				</section>
+
+				<section data-background="img/plugins.jpg" class="modal-bg-lite">
+					<h4 id="pluginsHeader" class="blink">Plugins! Plugins! Plugins!!!!</h4>
+					<ul>
+						<li>Package Control - Sublime package manager</li>
+						<li>Emmet - Shortcut scaffolding to rapidly generate HTML</li>
+						<li>Sublimerge - Excellent file diff tool-- integrates with Git/SVN projects</li>
+						<li>Linting/Hinting tools-- Pick your poison :)</li>
+						<li>HTML/CSS/JS Prettify-- Pretty much just what it says</li>
+					</ul>
+				</section>
+
+				<section data-background="img/settings.jpg">
+					<h3>Themes and customization</h3>
+					<p>Make Sublime Text your own...</p>
+				</section>
+
+				<section data-background="img/platforms.png" class="modal-bg-lite">
+					<h3>"Platform-friendly"</h3>
+					<p>Single-user license for unlimited computers: OSX, Windows <i>and</i> Linux!</p>
+				</section>
+
+				<section data-background="img/stars.jpg" class="modal-bg-lite">
+					<h3>Explore!</h3>
+					<p>Sublime Text is full of cool features-- go discover some of your own!</p>
+				</section>
+
+				<section data-background="#000000">
+					<p><i>fin</i></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/tagcloud/tagcloud.js'}
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
